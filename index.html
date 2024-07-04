@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="Styles/link.css">
         <link rel="stylesheet" type="text/css" href="Styles/barra.css">
         <link rel="stylesheet" type="text/css" href="Styles/main_barra.css">
+        <link rel="stylesheet" type="text/css" href="Styles/musica.css">
 
         <script src="Scripts/global_funcs.js"></script>
         <script src="Scripts/link_cls.js"></script>
@@ -39,8 +40,26 @@
             document.body.appendChild(div_links);
 
             //document.body.appendChild(get_img("Images/Profile.png", "profile_img"));
-
         </script>
+
+        <div class="music_container"> <!-- El contenedor de todos los objetos que abarcan la sección música -->
+            <p>Want to hear some music?</p>
+            <div class="music_reproductor"> <!-- El div que contiene los reproductores de música -->
+                <div class="music">
+                    <p>The Fallen Immortal</p>
+                    <audio controls>
+                        <source src="Audio/TheFallenImmortal.mp3" type="audio/mpeg">
+                        <source src="Audio/TheFallenImmortal.ogg" type="audio/ogg">
+                    </audio>
+                </div>
+                <div class="music">
+                    <p>Big Bug Of The Sands</p>
+                    <audio controls>
+                        <source src="Audio/BigBugOfTheSands.ogg" type="audio/ogg">
+                    </audio>
+                </div>
+            </div>
+        </div>
 
     </body>
 </html>
