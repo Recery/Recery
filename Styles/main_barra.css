@@ -1,6 +1,7 @@
 .profile_img
 {
     width: 100px;
+    cursor: pointer;
 }
 .profile_text
 {
