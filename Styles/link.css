@@ -1,0 +1,60 @@
+.links /* Contenedor de los links */
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    margin: 10px;
+}
+
+.boton_link
+{
+    width: 200px;
+    height: 80px;
+    margin: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s;
+}
+.boton_link.not_bright
+{
+    border-bottom: 3px solid rgb(49, 49, 49);
+    border-right: 3px solid rgb(49, 49, 49);
+    border-radius: 8px;
+}
+.boton_link.bright
+{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    border-right: 3px solid rgb(0, 0, 0);
+    border-radius: 8px;
+}
+.boton_link:hover
+{
+    filter: brightness(70%);
+    cursor: pointer;
+}
+.boton_link p 
+{
+    font-family: 'Silkscreen';
+    font-size: 25px;
+}
+
+.boton_link .not_bright
+{
+    color: rgb(0, 0, 75);
+}
+
+.boton_link .bright
+{
+    color: wheat !important;
+}
+
+.boton_link img
+{
+    width: 40px;
+    margin: 10px;
+}
