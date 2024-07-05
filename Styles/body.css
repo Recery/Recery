@@ -16,3 +16,18 @@ body
     justify-content: center;
     flex-direction: row;
 }
+
+.about
+{
+    display: inline-flex;
+    padding: 1%;
+    
+    background-color: #f89617;
+    border-bottom: 3px solid rgb(49, 49, 49);
+    border-right: 3px solid rgb(49, 49, 49);
+    border-radius: 8px;
+    
+    color: rgb(0, 0, 75);
+    font-family: "Silkscreen";
+    font-size: 16px;
+}

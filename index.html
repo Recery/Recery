@@ -38,12 +38,14 @@
             var youtube = new Link("Youtube", "https://www.youtube.com/@SlimeShoot", "Images/Youtube.png", "red");
             var itchio = new Link("itch.io", "https://senkosan12543.itch.io/", "Images/itchio.png", "#fa5c5c");
             var kofi = new Link("Ko-fi", "https://ko-fi.com/recery", "Images/Kofi.png", "#101010", true);
+            var about = new Link("About me", "#about", "Images/Profile.png", "#f89617");
 
             var div_links = get_div("links");
             div_links.appendChild(twitter.get_link());
             div_links.appendChild(youtube.get_link());
             div_links.appendChild(itchio.get_link());
             div_links.appendChild(kofi.get_link());
+            div_links.appendChild(about.get_link());
             seccion_principal.appendChild(div_links);
 
             var imagenes_2 = get_div("columna_imagenes"); // Guardar segunda columna de imagenes aca
@@ -76,5 +78,24 @@
         <br>
         <br>
         <iframe width="900" height="480" src="https://www.youtube.com/embed/lukYbNAiguI" title="Slime Shoot Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+        <p id="about" class="about">
+            Hi everyone, I'm Recery! I like making games and programming in general!
+            <br>
+            Currently I'm making Slime Shoot, an endless survival game where you play as a Slime. 
+            <br>
+            You can find it on my itch.io page.
+            <br>
+            I love Terraria and fishes! And many more things, but they wouldn't fit here!
+            <br>
+            My character is based on my old goldfish and a Slime. Why a slime? Because I'm making a Slime game!
+            <br>
+            I made the pixel art by myself. I don't know how good is it, but I don't care! I like it because it's mine.
+            <br>
+            If you want to know me better, I'm there on Twitter trying to meet more people.
+            <br>
+            I hope I can meet you!
+
+        </p>
     </body>
 </html>
