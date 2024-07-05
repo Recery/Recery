@@ -5,6 +5,8 @@
     align-items: center;
     margin: 0 auto;
 
+    width: 700px;
+
     border-bottom: 3px solid rgb(49, 49, 49);
     border-right: 3px solid rgb(49, 49, 49);
     border-radius: 6px;
