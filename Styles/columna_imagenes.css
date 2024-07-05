@@ -1,0 +1,19 @@
+.columna_imagenes
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    
+}
+.columna_imagenes img
+{
+    width: auto;
+    max-width: 125px;
+    height: 120px;
+    object-fit: contain;
+    margin: 50px;
+    padding: 0px;
+}

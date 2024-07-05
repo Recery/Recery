@@ -9,3 +9,10 @@ body
     background-color: rgb(119, 91, 19);
     text-align: center;
 }
+
+.seccion_principal
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}

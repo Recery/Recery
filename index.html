@@ -8,6 +8,7 @@
 
         <link rel="stylesheet" type="text/css" href="Styles/body.css">
         <link rel="stylesheet" type="text/css" href="Styles/link.css">
+        <link rel="stylesheet" type="text/css" href="Styles/columna_imagenes.css">
         <link rel="stylesheet" type="text/css" href="Styles/barra.css">
         <link rel="stylesheet" type="text/css" href="Styles/main_barra.css">
         <link rel="stylesheet" type="text/css" href="Styles/musica.css">
@@ -24,8 +25,15 @@
             add_link_click(image, "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
             barra.add_item(image);
             barra.add_item(get_text("Recery", "profile_text"));
-            //barra.add_item(new Link("About me", "index.html", "", "goldenrod").get_link());
             document.body.appendChild(barra.get_barra());
+
+            var seccion_principal = get_div("seccion_principal"); // Se guardan los links e imagenes de muestra aca. La parte principal de la pagina
+            document.body.appendChild(seccion_principal);
+
+            var imagenes_1 = get_div("columna_imagenes"); // Guardar primera columna de imagenes aca
+            imagenes_1.appendChild(get_img("Images/Sonde.png"));
+            imagenes_1.appendChild(get_img("Images/Slime.png"));
+            seccion_principal.appendChild(imagenes_1);
 
             var twitter = new Link("Twitter", "https://x.com/_Recery", "Images/Twitter.png", "#6d90f7");
             var youtube = new Link("Youtube", "https://www.youtube.com/@SlimeShoot", "Images/Youtube.png", "red");
@@ -37,9 +45,13 @@
             div_links.appendChild(youtube.get_link());
             div_links.appendChild(itchio.get_link());
             div_links.appendChild(kofi.get_link());
-            document.body.appendChild(div_links);
+            seccion_principal.appendChild(div_links);
 
-            //document.body.appendChild(get_img("Images/Profile.png", "profile_img"));
+            var imagenes_2 = get_div("columna_imagenes"); // Guardar segunda columna de imagenes aca
+            imagenes_2.appendChild(get_img("Images/Scorpion.png"));
+            imagenes_2.appendChild(get_img("Images/PlantiteSpirit.png"));
+            seccion_principal.appendChild(imagenes_2);
+
         </script>
 
         <div class="music_container"> <!-- El contenedor de todos los objetos que abarcan la sección música -->
