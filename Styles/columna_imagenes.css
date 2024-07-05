@@ -4,7 +4,7 @@
     justify-content: center;
     flex-direction: column;
 
-    
+    margin: 3%;
 }
 .columna_imagenes img
 {
@@ -12,6 +12,6 @@
     max-width: 125px;
     height: 120px;
     object-fit: contain;
-    margin: 50px;
+    margin: 5%;
     padding: 0px;
 }
